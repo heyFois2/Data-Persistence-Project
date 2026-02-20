@@ -9,7 +9,7 @@ public class DeathZone : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Destroy(other.gameObject);
+        Manager.GameOverText.SetActive(true);
         Manager.GameOver();
     }
 }
